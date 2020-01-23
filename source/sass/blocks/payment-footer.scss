@@ -1,0 +1,48 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.payment-footer {
+  padding: 15px 160px;
+
+  background-color: $color-white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102), 0 0 15px rgba(0, 0, 0, 0.0869282);
+}
+
+.footer__list {
+  @include listStyle;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 540px;
+}
+
+.footer__link {
+  margin: 0;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $color-main;
+
+  .footer__icon {
+    margin: 0 10px 0 0;
+  }
+
+  &:focus,
+  &:hover {
+    color: #00417B;
+
+    .footer__icon {
+      svg {
+        fill: #00417B;
+      }
+    }
+  }
+}

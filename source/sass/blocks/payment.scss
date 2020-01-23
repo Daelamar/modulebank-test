@@ -5,9 +5,7 @@
   margin: 0 0 0 auto;
 
   width: 900px;
-  height: 643px;
-
-  overflow-y: scroll;
+  min-height: 640px;
 
   background: $color-white;
   box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112);
@@ -17,7 +15,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 100%;
+  height: 520px;
+
+  overflow-y: scroll;
+
+  //:todo Временно до JS
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 512px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.09);
+    border-radius: 3px;
+  }
 }
 
 .payment__header {
@@ -105,7 +125,7 @@
 
   text-align: center;
 
-  color: $color-main;
+  color: #CF4545;;
 }
 
 .payment__sum-info {
@@ -143,5 +163,19 @@
 }
 
 .payment__card {
-  margin: 16px 0 0 0;
+  margin: 16px 0 20px 0;
+}
+
+.payment__description {
+  width: 545px;
+
+  .payment__caption {
+    margin: 0;
+
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #808080;
+  }
 }
