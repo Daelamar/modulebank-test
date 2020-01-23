@@ -1,0 +1,51 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.card {
+  width: 545px;
+}
+
+.card__info {
+  padding: 13px 25px 25px;
+  position: relative;
+
+  background: url("../../img/card-bg-home.png") no-repeat 489px 35px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102), 0 4px 15px rgba(0, 0, 0, 0.0869282), 0 2px 3px rgba(0, 0, 0, 0.0651891);
+}
+
+.card__title {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: $color-main;
+}
+
+.card__caption {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: $color-main;
+}
+
+.card__description {
+  margin: 0;
+  padding: 23px 45px 20px 30px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+
+  color: #2B2B2B;
+
+  background-color: #F2F2F2;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102), 0 4px 15px rgba(0, 0, 0, 0.0869282), 0 2px 3px rgba(0, 0, 0, 0.0651891);
+}

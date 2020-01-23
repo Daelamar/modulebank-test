@@ -1,0 +1,84 @@
+@import "../global/variables";
+
+.user-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-block__notice {
+  position: relative;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.user-block__count {
+  position: absolute;
+
+  width: 15px;
+  height: 15px;
+
+  right: -2px;
+  top: -5px;
+
+  font-size: 10px;
+  line-height: 12px;
+
+  text-align: center;
+
+  color: $color-white;
+
+  background: #E54D4D;
+  border: 2px solid #37AEC1;
+  border-radius: 50%;
+}
+
+.user-block__user-link {
+  margin: 0 0 0 45px;
+  padding: 22px 35px;
+  position: relative;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: $color-white;
+
+  transition-duration: 0.2s;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 25px;
+    right: 20px;
+
+    width: 7px;
+    height: 4px;
+
+    background-image: url("../img/dropdown.svg");
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 20px;
+    left: 7px;
+
+    width: 17px;
+    height: 17px;
+
+    background-image: url("../img/header-home.svg");
+  }
+
+  &:hover,
+  &:focus {
+    color: #E54D4D;
+  }
+}
